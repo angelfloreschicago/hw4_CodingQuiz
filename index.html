@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Coding Quiz Challenge</title>
-</head>
-<body>
-    <h1>Coding Quiz Challenge</h1>
-    <p>Try to answer the following code related questions within the time<br>
-    limit/ Keep in mind that incorrect answers will penalize your score/time<br>
-    by ten seconds!</p>
-    <button id="start-quiz">Start Quiz</button>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+    <div class="scores"><a href="./scores.html">View Highscores</a></div>
+    <div class="timer">Time: <span id="time">0</span></div>
+      <div id="title-page" class="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time<br>
+         limit. Keep in mind that incorrect answers will penalize your score/time<br>
+         by ten seconds!
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="options" class="options"></div>
+      </div>
+      <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+      </div>
+      <div id="prompt" class="prompt hide">Wrong!!</div>
+      <div id="prompt1" class="prompt1 hide">Correct!!</div>
+      <h1 id="quiz-over" class="hide"></h1>
+    </div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
