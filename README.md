@@ -1,7 +1,7 @@
 # HW4 Coding Quiz
 
 # Link:
-https://github.com/angelfloreschicago/hw4_CodingQuiz
+https://angelfloreschicago.github.io/hw4_CodingQuiz/
 <img src="./images/quiz_screenshot.png">
 
 ## User Story
